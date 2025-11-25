@@ -6,25 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Mario</title>
     <link rel="stylesheet" href="../public/style.css">
+    <script src="https://kit.fontawesome.com/8dacc41bdf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <div class="console">
-
         <div class="game-board">
+            <div id="start-screen">
+                <h2>Pressione <i class="fa-solid fa-play" style="color: #ffffff;"></i> para começar</h2>
+                <br>
+                <p>Ou tecla Enter</p>
+                <p>Para pular, tecla para cima</p>
+            </div>
+
+            <div id="score-board">
+                Score: <span id="score-value">00000</span>
+            </div>
+
+            <div id="game-over-screen">
+                <h2>Game Over</h2>
+                <p>Seu score foi: <span id="final-score">0</span></p>
+                <p>Pressione 'R' ou o botão Reiniciar.</p>
+            </div>
+
             <img src="img/clouds.png" alt="" class="clouds">
             <img src="img/mario.gif" alt="" class="mario">
             <img src="img/pipe.png" alt="" class="pipe">
         </div>
-        <div class="gameboy">
-            <img src="img/gameover.png" alt="">
-        </div>
-        <div class="controls">
-            <button id="play-button">Play</button>
-            <button id="restart-button">Restart</button>
-            <button id="down-button">Baixo</button>
-        </div>
+    </div>
+
+    <div class="controls">
+        <button id="play-button"><i class="fa-solid fa-play" style="color: #ffffff;"></i></button>
+        <button id="restart-button"><i class="fa-solid fa-share" style="color: #ffffff;"></i></button>
+        <button id="down-button"><i class="fa-solid fa-up-long" style="color: #ffffff;"></i></i></button>
     </div>
 </body>
 <script src="../public/script.js"></script>
